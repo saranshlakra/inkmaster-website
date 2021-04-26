@@ -4,8 +4,9 @@ $(document).ready(function () {
   $(window).on("beforeunload", function () {
     $(window).scrollTop(0);
   });
-
-  $(".call").click(function () {
+  
+  
+   $(".call").click(function () {
     $(".contact-us-mobile").hide(200);
     $(".call-us").show(200);
   });
@@ -80,4 +81,5 @@ $(document).ready(function () {
       offset: "50%",
     }
   );
+
 });

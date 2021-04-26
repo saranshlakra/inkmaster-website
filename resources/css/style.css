@@ -25,7 +25,7 @@ header {
   background-size: cover;
   height: 100vh;
   background-attachment: fixed;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .nav {
@@ -278,6 +278,10 @@ header h1 {
   border-left: rgba(85, 85, 85, 0.5) 1px solid;
 }
 
+.contact-us-mobile {
+  display: none;
+}
+
 .contact-us a {
   color: #555;
 }
@@ -324,6 +328,26 @@ header h1 {
   margin-left: 10%;
 }
 
+#number {
+    display: none;
+  }
+
+.js-an-1,
+.js-an-2,
+.js-an-3,
+.js-an-4 {
+  opacity: 0;
+}
+
+.js-an-1.animate__slideInLeft,
+.js-an-3.animate__slideInLeft {
+  opacity: 1;
+}
+.js-an-2.animate__slideInRight,
+.js-an-4.animate__slideInRight {
+  opacity: 1;
+}
+
 @media (max-width: 992px) {
   html {
     background-color: #fff;
@@ -336,6 +360,18 @@ header h1 {
     scroll-padding-top: 10vh;
   }
 
+  /* .bg img {
+    width: 0;
+  } */
+
+  /* header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.6)),
+      url(images/bg-mobile.jpg);
+  } */
+
+  .nav {
+    width: 100vw;
+  }
   .nav-icon {
     float: right;
     color: lawngreen;
@@ -380,7 +416,7 @@ header h1 {
   }
 
   .main {
-    height: 133vh;
+    height: 115vh;
   }
 
   .main .row h2 {
@@ -430,5 +466,86 @@ header h1 {
   }
   .nav ul li {
     padding-right: 10vw;
+  }
+
+  .contact {
+    height: 82vh;
+  }
+
+  .contact-para-2 {
+    margin-bottom: 6%;
+  }
+
+  .form {
+    display: block;
+    width: 100%;
+    padding-left: 0%;
+  }
+
+  .field {
+    margin-left: 0% !important;
+    width: 100% !important;
+    padding-bottom: 4%;
+  }
+
+  .field-1,
+  .field-2 {
+    height: 6vh !important;
+  }
+
+  .contact-us {
+    display: none;
+  }
+
+  .contact-us-mobile {
+    border-top: #555 1px solid;
+    display: block;
+    margin-top: 5%;
+    text-align: center;
+    padding-top: 4%;
+    padding-left: 6%;
+  }
+
+  .phone,
+  .gmail,
+  .fb,
+  .insta {
+    display: contents;
+  }
+
+  .icon {
+    font-size: 50px !important;
+    margin-right: 8%;
+  }
+
+  .contact-links {
+    color: #555 !important;
+  }
+
+  .img-mobile {
+    width: 100%;
+  }
+
+  .row-2 {
+    padding-bottom: 5vh;
+  }
+  a:hover {
+    border-bottom: none !important;
+  }
+  
+  .insta-img {
+    width: 11%;
+  }
+  
+  .call-us {
+    border-top: #555 1px solid;
+    display: none;
+    margin-top: 5%;
+    padding-top: 4%;
+    padding-left: 7.295%;
+  }
+
+  #number {
+    display: inline-block;
   }
 }
