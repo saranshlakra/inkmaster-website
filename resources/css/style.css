@@ -4,15 +4,40 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: white !important ;
+  --secondary-color: #555;
+  --main-color: rgba(0, 0, 0, 0);
+  --secondary-header-bg: linear-gradient(
+      rgba(0, 0, 0, 0.95),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(images/Tshirt-variety-website-banner.jpg);
+  --about-h3-color: #795548;
+}
+
+.dark-theme {
+  --primary-color: rgba(0, 0, 0, 0.92);
+  --secondary-color: white;
+  --secondary-header-bg: linear-gradient(
+      rgba(0, 0, 0, 0.95),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(images/Tshirt-variety-website-banner.jpg);
+
+  background-color: rgba(0, 0, 0, 0.95);
+  --about-h3-color: white;
+}
+
 html {
-  background-color: #fff;
-  color: #555;
+  /* background-color: var(--primary-color); */
+  color: var(--secondary-color);
   font-family: "Lato", Arial, sans-serif;
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
-  scroll-padding-top: 12vh;
+  scroll-padding-top: 10vh;
 }
 
 /* .row {
@@ -20,8 +45,7 @@ html {
 } */
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.6)),
-    url(images/Tshirt-variety-website-banner.jpg);
+  background-image: var(--secondary-header-bg);
   background-size: cover;
   height: 100vh;
   background-attachment: fixed;
@@ -68,8 +92,9 @@ a:link {
 }
 
 a:hover {
-  border-bottom: 1px solid lawngreen !important;
+  border-bottom: to right 1px solid lawngreen !important;
 }
+
 #logo {
   color: white;
   display: inline-block;
@@ -85,8 +110,16 @@ a:hover {
   border-bottom: 0 !important;
 }
 
+#dark-mode {
+  float: right;
+  width: 30px;
+  cursor: pointer;
+  left: 38%;
+  top: 30%;
+  position: relative;
+}
 .main {
-  background-color: whitesmoke;
+  background-color: var(--main-color);
   height: 88vh;
   padding-top: 4%;
   padding-bottom: 4%;
@@ -115,6 +148,15 @@ header h1 {
   padding-bottom: 2px;
 }
 
+#bottom-border {
+  width: 92%;
+  height: 20vh;
+  position: relative;
+  top: 42vh;
+  left: 4vw;
+  border-bottom: rgba(85, 85, 85, 0.5) 1px solid;
+}
+
 #tag-2 {
   top: 60%;
   left: 30%;
@@ -126,6 +168,7 @@ header h1 {
   text-align: center;
   margin-bottom: 30px;
   letter-spacing: 1px;
+  color: var(--secondary-color);
 }
 
 .product {
@@ -154,7 +197,7 @@ header h1 {
 
 .bg-color {
   height: 35vh;
-  background-color: #000;
+  background-color: black;
   overflow: hidden;
 }
 
@@ -177,13 +220,13 @@ header h1 {
 
 .about h3 {
   text-align: justify;
-  color: #795548;
+  color: var(--about-h3-color);
   font-size: 129%;
   font-weight: 300;
 }
 
 #product {
-  padding-top: 0;
+  padding-top: 2%;
 }
 
 /* .row-1 {
@@ -211,7 +254,8 @@ header h1 {
   font-size: 225%;
   padding-bottom: 2%;
   text-align: center;
-  border-bottom: rgb(128, 126, 126) 1px solid;
+  border-bottom: rgba(85, 85, 85, 0.5) 1px solid;
+  color: var(--secondary-color);
 }
 
 .contact-para-1 {
@@ -219,10 +263,12 @@ header h1 {
   text-align: center;
   margin-top: 2%;
   margin-bottom: 1%;
+  color: var(--secondary-color);
 }
 .contact-para-2 {
   text-align: center;
   margin-bottom: 1%;
+  color: var(--secondary-color);
 }
 
 .form {
@@ -254,9 +300,9 @@ header h1 {
 .submit {
   width: 45%;
   height: 6vh;
-  background-color: #555;
-  border: 1px solid #555;
-  color: #fff;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  color: var(--primary-color);
   padding: 10px;
   border-radius: 4px;
   transform: scale(1);
@@ -283,13 +329,13 @@ header h1 {
 }
 
 .contact-us a {
-  color: #555;
+  color: var(--secondary-color);
 }
 
 .contact-us a:hover {
   border-bottom: none !important;
   text-transform: uppercase;
-  color: #000;
+  /* color: #000; */
   font-weight: 400;
 }
 
@@ -308,6 +354,7 @@ header h1 {
 .icon {
   font-size: 36px !important;
   margin-right: 5%;
+  color: var(--secondary-color);
 }
 
 #phone {
@@ -328,9 +375,13 @@ header h1 {
   margin-left: 10%;
 }
 
+.call-us {
+  display: none;
+}
+
 #number {
-    display: none;
-  }
+  display: none;
+}
 
 .js-an-1,
 .js-an-2,
@@ -350,8 +401,8 @@ header h1 {
 
 @media (max-width: 992px) {
   html {
-    background-color: #fff;
-    color: #555;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     font-family: "Lato", Arial, sans-serif;
     font-size: 20px;
     font-weight: 300;
@@ -498,7 +549,7 @@ header h1 {
   }
 
   .contact-us-mobile {
-    border-top: #555 1px solid;
+    border-top: var(--secondary-color) 1px solid;
     display: block;
     margin-top: 5%;
     text-align: center;
@@ -515,11 +566,11 @@ header h1 {
 
   .icon {
     font-size: 50px !important;
-    margin-right: 8%;
+    margin-right: 10%;
   }
 
   .contact-links {
-    color: #555 !important;
+    color: var(--secondary-color) !important;
   }
 
   .img-mobile {
@@ -532,13 +583,13 @@ header h1 {
   a:hover {
     border-bottom: none !important;
   }
-  
+
   .insta-img {
     width: 11%;
   }
-  
+
   .call-us {
-    border-top: #555 1px solid;
+    border-top: var(--secondary-color) 1px solid;
     display: none;
     margin-top: 5%;
     padding-top: 4%;

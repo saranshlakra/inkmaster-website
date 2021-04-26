@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="resources/css/grid.css">
@@ -59,6 +59,8 @@
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
+
+                <img src="/Projects/Inkmaster Websitre/resources/css/images/moon-2.png" alt="Dark Mode" id="dark-mode">
             </nav>
 
         </nav>
@@ -93,6 +95,8 @@
 
             </h3>
         </div>
+
+        <div id="bottom-border"></div>
     </section>
 
 
@@ -229,7 +233,7 @@
                     </i>
                 </span>
                 <span>
-                    <a class="contact-links" aria-label="Inkmaster's number">+91
+                    <a class="contact-links" aria-label="Inkmaster's gmail id">+91
                         995836588*</a>
                 </span>
             </div>
@@ -246,10 +250,12 @@
             </div>
             <div class="insta">
                 <span id="insta">
-                    <img width="6%" class="icon" src="instagram.svg" alt="">
+                    <!-- <img width="6%" class="icon" src="instagram.svg" alt=""> --><i
+                        class="fa fa-instagram icon"></i>
+
                 </span>
                 <span>
-                    <a class="contact-links" aria-label="Inkmaster's insta page" href="www.instagram.com/asinkmaster/"
+                    <a class="contact-links" aria-label="Inkmaster's insta id" href="www.instagram.com/asinkmaster/"
                         target="_blank">Instagram</a>
                 </span>
             </div>
@@ -260,23 +266,23 @@
                     </span>
                 </span>
                 <span>
-                    <a class="contact-links" aria-label="Inkmaster's facebook page"
-                        href="www.instagram.com/asinkmaster/" target="_blank">Facebook</a>
+                    <a class="contact-links" aria-label="Inkmaster's insta id" href="www.instagram.com/asinkmaster/"
+                        target="_blank">Facebook</a>
                 </span>
             </div>
 
         </div>
-        <div class="contact-us-mobile">
+        <div class="contact-us-mobile ">
 
             <div class="phone">
-                <span id="phone"> <a class="contact-links call" aria-label="Inkmaster's number"><i
+                <span id="phone"> <a class="contact-links call" aria-label="Inkmaster's insta id"><i
                             class="material-icons icon">
                             support_agent
                         </i> </a>
                 </span>
             </div>
             <div class="gmail">
-                <span id="gmail"> <span id="phone"> <a class="contact-links" aria-label="Inkmaster's gmail id"
+                <span id="gmail"> <span id="phone"> <a class="contact-links" aria-label="Inkmaster's insta id"
                             href="https://www.gmail.com/#inbox?compose=new" target="_blank">
                             <i class="material-icons icon">
                                 mail_outline
@@ -284,13 +290,13 @@
                     </span>
             </div>
             <div class="insta">
-                <span id="insta"><span id="phone"> <a class="contact-links" aria-label="Inkmasters's insta page"
-                            href="https://www.instagram.com/asinkmaster/" target="_blank"><img width="6%"
-                                class="icon insta-img" src="instagram.svg" alt=""> </a>
+                <span id="insta"><span id="phone"> <a class="contact-links" aria-label="Inkmaster's insta id"
+                            href="https://www.instagram.com/asinkmaster/" target="_blank"><i
+                                class="fa fa-instagram icon"></i> </a>
                     </span>
             </div>
             <div class="fb">
-                <span id="insta"><a class="contact-links" aria-label="Inkmaster's facebook page"
+                <span id="insta"><a class="contact-links" aria-label="Inkmaster's insta id"
                         href="https://www.facebook.com" target="_blank">
                         <span class="material-icons icon">
                             facebook
@@ -300,8 +306,10 @@
 
         </div>
 
-        <div class="call-us">
-            <span id="phone"> <a class="contact-links call-1" aria-label="Inkmaster's number toll free"><i
+        <div class="call-us ">
+
+
+            <span id="phone"> <a class="contact-links call-1" aria-label="Inkmaster's insta id"><i
                         class="material-icons icon">
                         support_agent
                     </i> </a>
@@ -314,6 +322,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="resources/js/jquery.waypoints.min.js"></script>
     <script src="resources/js/JQuery.js"></script>
+    <script src="resources/js/javaScript.js"></script>
 </body>
 
 </html>
