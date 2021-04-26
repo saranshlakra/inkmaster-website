@@ -14,6 +14,8 @@
     ),
     url(images/Tshirt-variety-website-banner.jpg);
   --about-h3-color: #795548;
+
+  --submit-hover-color: white;
 }
 
 .dark-theme {
@@ -27,6 +29,8 @@
 
   background-color: rgba(0, 0, 0, 0.95);
   --about-h3-color: white;
+
+  --submit-hover-color: white;
 }
 
 html {
@@ -313,6 +317,7 @@ header h1 {
   background-color: rgba(49, 49, 49, 0.959);
   cursor: pointer;
   transform: scale(0.94);
+  color: var(--submit-hover-color);
 }
 
 .contact-us {
