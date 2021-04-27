@@ -555,6 +555,7 @@ header h1 {
   .field-1,
   .field-2,
   .field-3 {
+    opacity: 0.9;
     background-color: var(--form-fields-color);
   }
 
