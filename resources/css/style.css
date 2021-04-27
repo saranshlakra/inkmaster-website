@@ -611,6 +611,10 @@ header h1 {
     padding-left: 7.295%;
   }
 
+  #dark-mode {
+    display: none;
+  }
+
   #dark-mode-mobile {
     display: block;
     float: right;

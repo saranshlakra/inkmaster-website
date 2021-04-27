@@ -10,9 +10,11 @@ let localData = localStorage.getItem("theme");
 
 if (localData == "light") {
   icon.src = "resources/css/images/moon-2.png";
+  icon_mobile.src = "resources/css/images/moon-2.png";
   document.body.classList.remove("dark-theme");
 } else if (localData == "dark") {
   icon.src = "resources/css/images/sun-2.png";
+  icon_mobile.src = "resources/css/images/sun-2.png";
   document.body.classList.add("dark-theme");
 }
 
