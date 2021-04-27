@@ -14,7 +14,7 @@
     ),
     url(images/Tshirt-variety-website-banner.jpg);
   --about-h3-color: #795548;
-
+  --form-fields-color: white;
   --submit-hover-color: white;
 }
 
@@ -29,7 +29,7 @@
 
   background-color: rgba(0, 0, 0, 0.95);
   --about-h3-color: white;
-
+  --form-fields-color: #fffffff0;
   --submit-hover-color: white;
 }
 
@@ -409,7 +409,7 @@ header h1 {
 }
 
 @media (max-width: 992px) {
-  html {
+  /* html {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-family: "Lato", Arial, sans-serif;
@@ -418,7 +418,7 @@ header h1 {
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
     scroll-padding-top: 10vh;
-  }
+  } */
 
   /* .bg img {
     width: 0;
@@ -552,6 +552,11 @@ header h1 {
   .field-2 {
     height: 6vh !important;
   }
+  .field-1,
+  .field-2,
+  .field-3 {
+    background-color: var(--form-fields-color);
+  }
 
   .contact-us {
     display: none;
@@ -617,5 +622,9 @@ header h1 {
 
   #number {
     display: inline-block;
+  }
+
+  #bottom-border {
+    top: 82vh;
   }
 }
