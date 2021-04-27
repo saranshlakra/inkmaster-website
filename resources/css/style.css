@@ -628,4 +628,11 @@ header h1 {
   #bottom-border {
     top: 82vh;
   }
+#about {
+  height: 145vh;
+}
+
+#product {
+  height: 133vh;
+}
 }
