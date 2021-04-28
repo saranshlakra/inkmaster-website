@@ -118,7 +118,7 @@ a:hover {
   float: right;
   width: 30px;
   cursor: pointer;
-  left: 38%;
+  left: 28%;
   top: 30%;
   position: relative;
 }
@@ -156,12 +156,8 @@ header h1 {
   padding-bottom: 2px;
 }
 
-#bottom-border {
-  width: 92%;
-  height: 20vh;
-  position: relative;
-  top: 42vh;
-  left: 4vw;
+#border-bottom {
+  padding-bottom: 15%;
   border-bottom: rgba(85, 85, 85, 0.5) 1px solid;
 }
 
@@ -476,7 +472,7 @@ header h1 {
   }
 
   .main {
-    height: 135vh;
+    height: 115vh;
   }
 
   .main .row h2 {
@@ -555,7 +551,6 @@ header h1 {
   .field-1,
   .field-2,
   .field-3 {
-    opacity: 0.9;
     background-color: var(--form-fields-color);
   }
 
@@ -614,7 +609,6 @@ header h1 {
   #dark-mode {
     display: none;
   }
-
   #dark-mode-mobile {
     display: block;
     float: right;
@@ -627,16 +621,34 @@ header h1 {
 
   #number {
     display: inline-block;
+    color: var(--secondary-color);
   }
 
   #bottom-border {
     top: 82vh;
   }
-#about {
-  height: 145vh;
+
+  #about {
+    height: 145vh;
+  }
+
+  #product {
+    height: 115vh;
+  }
 }
 
-#product {
-  height: 115vh;
+@media (min-height: 670px) {
+  #about {
+    height: 115vh;
+  }
+
+  #product {
+    height: 115vh;
+  }
 }
+/* ----------- Pixel 2 XL*/
+@media (height: 823px) {
+  #about {
+    height: 100vh;
+  }
 }
